@@ -17,9 +17,5 @@ class Player:
         # Code to check if the shot hits or misses goes here
         pass
 
-board = Board(10)
-board.place_ship(3)
-board.print_board()
-
 player = Player()
 shot_row, shot_col = player.take_shot()
