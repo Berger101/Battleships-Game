@@ -58,6 +58,9 @@ class Player:
             other_player.board[row][col] = "X"
         else:
             print("Miss!")
+
+    def check_win(self, other_player):
+        return all(all(cell == "X" or cell == "." for cell in row) for row in other_player.board)
     
 
 class Computer(Player):
