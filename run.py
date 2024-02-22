@@ -80,13 +80,23 @@ def play_game():
   player.place_ships()
   computer.place_ships()
 
-  # Display the initial board
-  player.display_board()
-  computer.display_board()
+  while True:
+      player.display_board()
+      computer.display_board()
 
-  # Player's turn
-  player_guess_row, player_guess_col = player.take_turn(computer)
-  player.mark_hit(player_guess_row, player_guess_col, computer)
+      # Player's turn
+      player_guess_row, player_guess_col = player.take_turn(computer)
+      player.mark_hit(player_guess_row, player_guess_col, computer)
+      if player.check_win(computer):
+          print("Congratulations! You sank all computer's ships. You win!")
+          break
+
+      # Computer's turn
+      computer_guess_row, computer_guess_col = computer.take_turn(player)
+      computer.mark_hit(computer_guess_row, computer_guess_col, player)
+      if computer.check_win(player):
+          print("Oh no! Computer sank all your ships. You lose!")
+          break
 
 # Checks whether the Python script is being run as the main program or if it is being imported as a module into another script.
 if __name__ == "__main__":
