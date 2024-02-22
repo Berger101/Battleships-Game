@@ -19,7 +19,7 @@ class Player:
     def check_shot(self, board, row, col):
         pass
 
-player = Player("Player1")
+player = Player("Player")
 
 # Display the initial board
 player.display_board()
