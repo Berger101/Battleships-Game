@@ -1,7 +1,11 @@
 from random import choice, randint
 
 class Player:
+    """
+    Main Player class. Displaying the board and place ships on the board,
+    """
     def __init__(self, name):
+        """Initialize the board with the given size."""
         self.name = name
         self.board = [["." for _ in range(10)] for _ in range(10)]
         self.ships = {"carrier": 5, "battleship": 4, "cruiser": 3, "submarine": 3, "destroyer": 2}
@@ -11,6 +15,7 @@ class Player:
             self.place_ship(ship, size)
 
     def place_ship(self, ship, size):
+        """Randomly place a ship of the given size on the board."""
         while True:
             orientation = choice(["horizontal", "vertical"])
             if orientation == "horizontal":
@@ -29,6 +34,7 @@ class Player:
                     break
 
     def display_board(self):
+        """Print the board with numbers indicating the indexes"""
         print(f"\n{self.name}'s Board:")
         print("  0 1 2 3 4 5 6 7 8 9")
         for i, row in enumerate(self.board):
