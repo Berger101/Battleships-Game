@@ -40,8 +40,24 @@ class Player:
         for i, row in enumerate(self.board):
             print(f"{i} {' '.join(row)}")
 
-    def check_shot(self, board, row, col):
-        pass
+    def take_turn(self, other_player):
+        while True:
+            try:
+                guess_row = int(input("Enter guess row (0-9): "))
+                guess_col = int(input("Enter guess column (0-9): "))
+                if 0 <= guess_row <= 9 and 0 <= guess_col <= 9 and other_player.board[guess_row][guess_col] != "X":
+                    return guess_row, guess_col
+                else:
+                    print("Invalid guess. Try again.")
+            except ValueError:
+                print("Invalid input. Enter integers only.")
+
+    def mark_hit(self, row, col, other_player):
+        if other_player.board[row][col] != ".":
+            print("Hit!")
+            other_player.board[row][col] = "X"
+        else:
+            print("Miss!")
     
 
 class Computer(Player):
@@ -67,6 +83,10 @@ def play_game():
   # Display the initial board
   player.display_board()
   computer.display_board()
+
+  # Player's turn
+  player_guess_row, player_guess_col = player.take_turn(computer)
+  player.mark_hit(player_guess_row, player_guess_col, computer)
 
 # Checks whether the Python script is being run as the main program or if it is being imported as a module into another script.
 if __name__ == "__main__":
