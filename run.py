@@ -41,6 +41,9 @@ class Player:
             print(f"{i} {' '.join(row)}")
 
     def take_turn(self, other_player):
+        """
+        Take turn method, where the player may enter the row and column it wants to hit and error handling for if invalid input is put in
+        """
         while True:
             try:
                 guess_row = int(input("Enter target row (0-9): "))
@@ -53,6 +56,9 @@ class Player:
                 print("Invalid input. Enter integers only.")
 
     def mark_hit(self, row, col, other_player):
+        """
+        Mark hit method where every hit is printed out
+        """
         if other_player.board[row][col] != ".":
             print("Hit!")
             other_player.board[row][col] = "X"
@@ -60,6 +66,9 @@ class Player:
             print("Miss!")
 
     def check_win(self, other_player):
+        """
+        Check win method where the game checks if someone wins the game after hitting all the ships
+        """
         return all(all(cell == "X" or cell == "." for cell in row) for row in other_player.board)
     
 
@@ -77,6 +86,9 @@ class Computer(Player):
 
 
 def play_game():
+    """
+    Play game function, where each player takes it's turn
+    """
     player = Player("Player")
     computer = Computer()
 
