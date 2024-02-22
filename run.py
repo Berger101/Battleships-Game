@@ -43,8 +43,13 @@ class Player:
     def check_shot(self, board, row, col):
         pass
 
-player = Player("Player")
-player.place_ships()
+def play_game():
+  player = Player("Player")
+  player.place_ships()
 
-# Display the initial board
-player.display_board()
+  # Display the initial board
+  player.display_board()
+
+# Checks whether the Python script is being run as the main program or if it is being imported as a module into another script.
+if __name__ == "__main__":
+    play_game()
