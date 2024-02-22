@@ -10,7 +10,16 @@ class Player:
         for ship, size in self.ships.items():
             self.place_ship(ship, size)
 
+    def display_board(self):
+        print(f"\n{self.name}'s Board:")
+        print("  0 1 2 3 4 5 6 7 8 9")
+        for i, row in enumerate(self.board):
+            print(f"{i} {' '.join(row)}")
+
     def check_shot(self, board, row, col):
         pass
 
-player = Player(10)
+player = Player("Player1")
+
+# Display the initial board
+player.display_board()
