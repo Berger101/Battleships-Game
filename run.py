@@ -42,13 +42,31 @@ class Player:
 
     def check_shot(self, board, row, col):
         pass
+    
+
+class Computer(Player):
+    """
+    Computer class so two players may play the game.
+    """
+    def __init__(self):
+        super().__init__("Computer")
+
+    def take_turn(self, other_player):
+        guess_row = randint(0, 9)
+        guess_col = randint(0, 9)
+        return guess_row, guess_col
+
 
 def play_game():
   player = Player("Player")
+  computer = Computer()
+
   player.place_ships()
+  computer.place_ships()
 
   # Display the initial board
   player.display_board()
+  computer.display_board()
 
 # Checks whether the Python script is being run as the main program or if it is being imported as a module into another script.
 if __name__ == "__main__":
