@@ -46,9 +46,10 @@ class Player:
         """
         while True:
             try:
-                guess_col = int(input("Enter target column (0-9): "))
-                guess_row = int(input("Enter target row (0-9): "))
-                if 0 <= guess_row <= 9 and 0 <= guess_col <= 9 and other_player.board[guess_row][guess_col] != "X":
+                guess_col = int(input("Enter target row (0-9): "))
+                guess_row = int(input("Enter target column (0-9): "))
+                
+                if 0 <= guess_row <= 9 and 0 <= guess_col <= 9 and other_player.board[guess_col][guess_row] != "X":
                     return guess_row, guess_col
                 else:
                     print("Invalid guess. Try again.")
@@ -60,10 +61,11 @@ class Player:
         Mark hit method where every hit is printed out
         """
         if other_player.board[row][col] != ".":
-            print("Hit!")
+            print("Hit!") # what player is hitting
             other_player.board[row][col] = "X"
         else:
             print("Miss!")
+            other_player.board[row][col] = "M"
 
     def check_win(self, other_player):
         """
@@ -97,7 +99,7 @@ def play_game():
 
     while True:
         player.display_board()
-        computer.display_board()
+        computer.display_board() # See players ships but not computer and all misses marked with "M"
 
         # Player's turn
         player_guess_row, player_guess_col = player.take_turn(computer)
