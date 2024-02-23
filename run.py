@@ -7,7 +7,7 @@ class Player:
     def __init__(self, name):
         """Initialize the board with the given size."""
         self.name = name
-        self.board = [["." for _ in range(10)] for _ in range(10)]
+        self.board = [["." for R in range(10)] for C in range(10)]
         self.ships = {"carrier": 5, "battleship": 4, "cruiser": 3, "submarine": 3, "destroyer": 2}
 
     def place_ships(self):
@@ -46,7 +46,6 @@ class Player:
         """
         while True:
             try:
-                guess_row = int(input("Enter target row (0-9): "))
                 guess_col = int(input("Enter target column (0-9): "))
                 if 0 <= guess_row <= 9 and 0 <= guess_col <= 9 and other_player.board[guess_row][guess_col] != "X":
                     return guess_row, guess_col
