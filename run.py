@@ -58,10 +58,10 @@ class Player:
 
     def mark_hit(self, row, col, other_player):
         """
-        Mark hit method where every hit is printed out
+        Mark hit method where every hit and miss is printed out
         """
         if other_player.board[row][col] != ".":
-            print("Hit!") # what player is hitting
+            print("Hit!")
             other_player.board[row][col] = "X"
         else:
             print("Miss!")
@@ -99,7 +99,7 @@ def play_game():
 
     while True:
         player.display_board()
-        computer.display_board() # See players ships but not computer and all misses marked with "M"
+        computer.display_board()
 
         # Player's turn
         player_guess_row, player_guess_col = player.take_turn(computer)
