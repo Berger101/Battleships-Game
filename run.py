@@ -33,12 +33,16 @@ class Player:
                         self.board[row + i][col] = ship[0]
                     break
 
-    def display_board(self):
+    def display_board(self, hide_computer_ships=True):
         """Print the board with numbers indicating the indexes"""
         print(f"\n{self.name}'s Board:")
         print("  0 1 2 3 4 5 6 7 8 9")
         for i, row in enumerate(self.board):
-            print(f"{i} {' '.join(row)}")
+            if hide_computer_ships and self.name == "Computer":
+                row_display = ['.' if cell != "X" and cell != "M" else cell for cell in row]
+            else:
+                row_display = row
+            print(f"{i} {' '.join(row_display)}")
 
     def take_turn(self, other_player):
         """
@@ -98,7 +102,7 @@ def play_game():
     computer.place_ships()
 
     while True:
-        player.display_board()
+        player.display_board(hide_computer_ships=True)
         computer.display_board()
 
         # Player's turn
