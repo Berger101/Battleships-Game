@@ -47,6 +47,7 @@ class Player:
         while True:
             try:
                 guess_col = int(input("Enter target column (0-9): "))
+                guess_row = int(input("Enter target row (0-9): "))
                 if 0 <= guess_row <= 9 and 0 <= guess_col <= 9 and other_player.board[guess_row][guess_col] != "X":
                     return guess_row, guess_col
                 else:
