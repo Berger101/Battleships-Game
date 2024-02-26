@@ -72,11 +72,13 @@ class Player:
         Mark hit method where every hit and miss is printed out
         """
         if other_player.board[row][col] != ".":
-            print("Hit!")
+            print(Fore.RED + "Hit!\U0001F525")
             other_player.board[row][col] = "X"
+            print(Style.RESET_ALL)
         else:
-            print("Miss!")
+            print(Fore.GREEN +"Miss!\U0001F61E")
             other_player.board[row][col] = "M"
+            print(Style.RESET_ALL)
 
     def check_win(self, other_player):
         """
