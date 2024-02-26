@@ -1,4 +1,5 @@
 from random import choice, randint
+from colorama import Fore, Style
 
 class Player:
     """
