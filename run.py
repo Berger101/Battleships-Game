@@ -68,16 +68,16 @@ class Player:
             except ValueError:
                 print("Invalid input. Enter integers only.")
 
-    def mark_hit(self, row, col, other_player):
+    def mark_hit(self, row, col, other_player, source):
         """
         Mark hit method where every hit and miss is printed out
         """
         if other_player.board[row][col] != ".":
-            print(Fore.RED + "Hit!\U0001F525")
+            print(Fore.RED + f"{source} Hit!\U0001F525")
             other_player.board[row][col] = "X"
             print(Style.RESET_ALL)
         else:
-            print(Fore.GREEN +"Miss!\U0001F61E")
+            print(Fore.GREEN + f"{source} Miss!\U0001F61E")
             other_player.board[row][col] = "M"
             print(Style.RESET_ALL)
 
@@ -124,14 +124,14 @@ def play_game():
 
         # Player's turn
         player_guess_row, player_guess_col = player.take_turn(computer)
-        player.mark_hit(player_guess_row, player_guess_col, computer)
+        player.mark_hit(player_guess_row, player_guess_col, computer, source="Player")
         if player.check_win(computer):
             print("Congratulations! You sank all computer's ships. You win!")
             break
 
         # Computer's turn
         computer_guess_row, computer_guess_col = computer.take_turn(player)
-        computer.mark_hit(computer_guess_row, computer_guess_col, player)
+        computer.mark_hit(computer_guess_row, computer_guess_col, player, source="Computer")
         if computer.check_win(player):
             print("Oh no! Computer sank all your ships. You lose!")
             break
