@@ -128,4 +128,6 @@ def play_game():
 
 # Checks whether the Python script is being run as the main program or if it is being imported as a module into another script.
 if __name__ == "__main__":
+    print("Welcome to Battleships game!")
+    print("You're mission is to destroy all enemy ships placed on the battlefield, good luck!")
     play_game()
