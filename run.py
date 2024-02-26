@@ -46,17 +46,24 @@ class Player:
 
     def take_turn(self, other_player):
         """
-        Take turn method, where the player may enter the row and column it wants to hit and error handling for if invalid input is put in
+        Take turn method, where the player may enter the row and column to target and error handling for invalid input
         """
+        guessed_coordinates = set()  # Set to store previously guessed coordinates
         while True:
             try:
                 guess_col = int(input("Enter target row (0-9): "))
                 guess_row = int(input("Enter target column (0-9): "))
                 
-                if 0 <= guess_row <= 9 and 0 <= guess_col <= 9 and other_player.board[guess_col][guess_row] != "X":
-                    return guess_row, guess_col
+                if guess_row not in range(0, 10) or guess_col not in range(0, 10):
+                    print("Please choose numbers between 0 and 9.")
+                elif (guess_col, guess_row) in guessed_coordinates:
+                    print("Already targeted. Try again.")
+                elif other_player.board[guess_row][guess_col] in ["X", "M"]:
+                    guessed_coordinates.add((guess_col, guess_row))  # Add guessed coordinates to the set
+                    print("Already targeted. Try again.")
                 else:
-                    print("Invalid guess. Try again.")
+                    guessed_coordinates.add((guess_col, guess_row))  # Add guessed coordinates to the set
+                    return guess_row, guess_col
             except ValueError:
                 print("Invalid input. Enter integers only.")
 
