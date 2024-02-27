@@ -41,6 +41,10 @@ Get ready for an immersive Battleships experience – command your fleet, outsma
 * Your dependencies must be placed in the `requirements.txt` file
 * Do not edit any of the other files or your code may not deploy properly
 
+## Constraints
+
+The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+
 ## Testing
 - I tested that this page works in different browsers: Chrome, Firefox, Safari.
 - I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
@@ -60,9 +64,25 @@ If you have credentials, such as in the Love Sandwiches project, you must create
 
 Connect your GitHub repository and deploy as normal.
 
-## Constraints
+## Local Deployment
+Follow these steps to deploy the Monster Slaying Game on your local machine.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+  <b>Clone the Repository</b>
+  - Open a terminal and run the following command to clone the project repository:
 
------
-Happy coding!
+```console
+git clone https://github.com/your-username/battleships-game.git
+```
+
+  - Replace your-username with your GitHub username.
+  <b>Navigate to the Project Directory</b>
+  - Change into the project directory by running the following command in your terminal:
+
+```console
+cd battleships-game
+```
+
+  <b>Open the Game</b>
+  - Open the index.html file in your preferred web browser. You can do this by double-clicking the file or right-clicking and choosing "Open with" your browser.
+  <b>Enjoy the Game</b>
+  - You are now ready to enjoy the Monster Slaying Game on your local machine! Feel free to explore the game interface, battle monsters, and test different strategies.
