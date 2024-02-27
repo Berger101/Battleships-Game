@@ -1,8 +1,37 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleships Game
 
-Welcome USER_NAME,
+Welcome to the Battleships Game – a classic naval combat experience brought to life in Python! Engage in thrilling battles against the computer and strategically position your fleet to dominate the high seas.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Game Features
+
+### Dynamic Gameplay
+- Experience the excitement of naval warfare with a dynamic turn-based gameplay.
+- Challenge the computer AI in intense one-on-one battles.
+
+### Fleet Deployment
+- Strategically place your fleet of five iconic ships: Carrier (5 cells), Battleship (4 cells), Cruiser (3 cells), Submarine (3 cells), and Destroyer (2 cells).
+- Randomized ship placement ensures a unique and challenging experience in each game.
+
+### Tactical Decision-Making
+- Take turns to target your opponent's fleet by entering coordinates on the game board.
+- Make wise choices to sink your opponent's ships and avoid their relentless attacks.
+
+### Real-Time Feedback
+- Receive real-time feedback on hits and misses, accompanied by colorful emojis for a visually engaging experience.
+- See the state of the battlefield with a clear display of your and your opponent's boards.
+
+### Victory Conditions
+- Win the game by strategically sinking all of your opponent's ships.
+- A computer victory occurs when your fleet is entirely submerged beneath the waves.
+
+### Colorful Interface
+- Enjoy a visually appealing game interface with color-coded text using the `colorama` library.
+
+## How to Play
+1. Clone the repository to your local machine.
+2. Run the game by executing the `run.py` script in your preferred Python environment.
+
+Get ready for an immersive Battleships experience – command your fleet, outsmart your opponent, and claim victory on the high seas!
 
 ## Reminders
 
