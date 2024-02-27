@@ -1,15 +1,23 @@
 from random import choice, randint
 from colorama import Fore, Style
 
+
 class Player:
     """
     Main Player class. Displaying the board and place ships on the board,
     """
+
     def __init__(self, name):
         """Initialize the board with the given size."""
         self.name = name
         self.board = [["." for R in range(10)] for C in range(10)]
-        self.ships = {"carrier": 5, "battleship": 4, "cruiser": 3, "submarine": 3, "destroyer": 2}
+        self.ships = {
+            "carrier": 5,
+            "battleship": 4,
+            "cruiser": 3,
+            "submarine": 3,
+            "destroyer": 2,
+        }
 
     def place_ships(self):
         for ship, size in self.ships.items():
@@ -40,7 +48,9 @@ class Player:
         print("  0 1 2 3 4 5 6 7 8 9")
         for i, row in enumerate(self.board):
             if hide_computer_ships and self.name == "Computer":
-                row_display = ['.' if cell != "X" and cell != "M" else cell for cell in row]
+                row_display = [
+                    "." if cell != "X" and cell != "M" else cell for cell in row
+                ]
             else:
                 row_display = row
             print(f"{i} {' '.join(row_display)}")
@@ -54,7 +64,7 @@ class Player:
             try:
                 guess_col = int(input("Enter target row (0-9): "))
                 guess_row = int(input("Enter target column (0-9): "))
-                
+
                 if guess_row not in range(0, 10) or guess_col not in range(0, 10):
                     print("Please choose numbers between 0 and 9.")
                 elif (guess_col, guess_row) in guessed_coordinates:
@@ -88,17 +98,23 @@ class Player:
         # Iterate through each ship
         for ship, size in other_player.ships.items():
             # Check if all cells of the ship are marked as hit
-            if all(other_player.board[row][col] == "X" for row in range(10) for col in range(10) if other_player.board[row][col] == ship[0]):
+            if all(
+                other_player.board[row][col] == "X"
+                for row in range(10)
+                for col in range(10)
+                if other_player.board[row][col] == ship[0]
+            ):
                 continue
             else:
                 return False
         return True
-    
+
 
 class Computer(Player):
     """
     Computer class so two players may play the game.
     """
+
     def __init__(self):
         super().__init__("Computer")
 
@@ -131,13 +147,18 @@ def play_game():
 
         # Computer's turn
         computer_guess_row, computer_guess_col = computer.take_turn(player)
-        computer.mark_hit(computer_guess_row, computer_guess_col, player, source="Computer")
+        computer.mark_hit(
+            computer_guess_row, computer_guess_col, player, source="Computer"
+        )
         if computer.check_win(player):
             print("Oh no! Computer sank all your ships. You lose!")
             break
 
+
 # Checks whether the Python script is being run as the main program or if it is being imported as a module into another script.
 if __name__ == "__main__":
     print("Welcome to Battleships game!")
-    print("You're mission is to destroy all enemy ships placed on the battlefield, good luck!")
+    print(
+        "You're mission is to destroy all enemy ships placed on the battlefield, good luck!"
+    )
     play_game()
