@@ -4,6 +4,29 @@ Welcome to the Battleships Game – a classic naval combat experience brought to
 
 <img src="assets/images/battleshipsgame.png">
 
+## Using Classes
+
+The Battleships Game is structured using Python classes, offering a modular and organized approach to code design. The use of classes provides clear separation of concerns and enhances the maintainability and readability of the codebase.
+
+### Player Class
+
+The `Player` class encapsulates all aspects of a player, including their board, fleet, ship placement logic, and turn-taking functionality. This abstraction allows for easy extension and customization of player-related features.
+
+Key functionalities of the `Player` class include:
+- **Ship Placement:** Randomized placement of ships on the game board.
+- **Turn-Taking:** Handling player turns, input validation, and targeting the opponent's board.
+- **Feedback and Marking:** Providing real-time feedback on hits and misses, as well as marking the opponent's board.
+
+### Computer Class
+
+The `Computer` class, inheriting from the `Player` class, represents the computer opponent in the game. It leverages the same ship placement and turn-taking logic as the human player, offering a consistent and challenging gaming experience.
+
+### Game Loop
+
+The game itself is orchestrated by the `play_game` function, coordinating the turns between the human player and the computer opponent. The use of classes facilitates a clean separation of responsibilities and promotes code reusability.
+
+Enjoy exploring the modular and object-oriented design of the Battleships Game, where classes enhance code organization and contribute to an enjoyable gaming experience!
+
 ## Game Features
 
 ### Dynamic Gameplay
