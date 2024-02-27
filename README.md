@@ -75,6 +75,7 @@ git clone https://github.com/your-username/battleships-game.git
 ```
 
   - Replace your-username with your GitHub username.
+
   <b>Navigate to the Project Directory</b>
   - Change into the project directory by running the following command in your terminal:
 
