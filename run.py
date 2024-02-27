@@ -62,18 +62,21 @@ class Player:
         guessed_coordinates = set()  # Set to store previously guessed coordinates
         while True:
             try:
-                guess_col = int(input("Enter target row (0-9): "))
-                guess_row = int(input("Enter target column (0-9): "))
+                guess_row = int(input("Enter target row (0-9): "))
+                guess_col = int(input("Enter target column (0-9): "))
 
                 if guess_row not in range(0, 10) or guess_col not in range(0, 10):
                     print("Please choose numbers between 0 and 9.")
-                elif (guess_col, guess_row) in guessed_coordinates:
+                elif (guess_row, guess_col) in guessed_coordinates:
                     print("Already targeted. Try again.")
                 elif other_player.board[guess_row][guess_col] in ["X", "M"]:
-                    guessed_coordinates.add((guess_col, guess_row))  # Add guessed coordinates to the set
+                    # Add guessed coordinates to the set
+                    guessed_coordinates.add((guess_row, guess_col))
                     print("Already targeted. Try again.")
                 else:
-                    guessed_coordinates.add((guess_col, guess_row))  # Add guessed coordinates to the set
+                    guessed_coordinates.add(
+                        (guess_row, guess_col)
+                    )  # Add guessed coordinates to the set
                     return guess_row, guess_col
             except ValueError:
                 print("Invalid input. Enter integers only.")
