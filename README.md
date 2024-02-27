@@ -27,6 +27,28 @@ The game itself is orchestrated by the `play_game` function, coordinating the tu
 
 Enjoy exploring the modular and object-oriented design of the Battleships Game, where classes enhance code organization and contribute to an enjoyable gaming experience!
 
+## Code Features
+
+### Input Validation and Error Handling
+
+The Battleships Game incorporates robust input validation and error handling mechanisms to ensure a smooth and error-free gaming experience.
+
+#### Player Input Validation
+
+The `take_turn` method in the `Player` class validates user inputs during the targeting phase. Key features include:
+
+- **Numeric Input:** Enforces that the entered values for row and column are numeric.
+- **Range Check:** Verifies that the entered values fall within the valid range of 0 to 9 for both rows and columns.
+- **Coordinate Uniqueness:** Prevents the player from targeting the same coordinates multiple times in a single game.
+
+#### General Error Handling
+
+The Battleships Game includes comprehensive error handling throughout the codebase. Examples include:
+
+- **Invalid Input:** Catching ValueError for non-integer inputs during user interactions.
+- **Index Errors:** Ensuring that index values do not go out of bounds when accessing elements in lists.
+- **Logical Checks:** Verifying the logic of ship placement to avoid conflicts or errors.
+
 ## Game Features
 
 ### Dynamic Gameplay
