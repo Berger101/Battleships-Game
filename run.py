@@ -49,7 +49,8 @@ class Player:
         for i, row in enumerate(self.board):
             if hide_computer_ships and self.name == "Computer":
                 row_display = [
-                    "." if cell != "X" and cell != "M" else cell for cell in row
+                    "." if cell != "X" and cell != "M"
+                    else cell for cell in row
                 ]
             else:
                 row_display = row
@@ -57,9 +58,13 @@ class Player:
 
     def take_turn(self, other_player):
         """
-        Take turn method, where the player may enter the row and column to target and error handling for invalid input
+        Take turn method.
+        Player may enter the row and column
+        to target
+        and error handling for invalid input
         """
-        guessed_coordinates = set()  # Set to store previously guessed coordinates
+        # Set to store previously guessed coordinates
+        guessed_coordinates = set()
         while True:
             try:
                 guess_row = int(input("Enter target row (0-9): "))
@@ -96,7 +101,9 @@ class Player:
 
     def check_win(self, other_player):
         """
-        Check win method where the game checks if someone wins the game after hitting all the ships
+        Check win method where the game checks
+        if someone wins the game after
+        sinking all the ships
         """
         # Iterate through each ship
         for ship in other_player.ships.items():
@@ -143,7 +150,10 @@ def play_game():
 
         # Player's turn
         player_guess_row, player_guess_col = player.take_turn(computer)
-        player.mark_hit(player_guess_row, player_guess_col, computer, source="Player")
+        player.mark_hit(player_guess_row,
+                        player_guess_col,
+                        computer,
+                        source="Player")
         if player.check_win(computer):
             print("Congratulations! You sank all computer's ships. You win!")
             break
