@@ -94,4 +94,4 @@ Content
   - Some of the text for the README.md file were taken from <a href="https://chat.openai.com/">ChatGPT</a>
 
 Styling
-  - The styling for the game area was largely taken from the CI <a href="https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode">Love Sandwiches</a> project.
+  - The styling for the game area was largely taken from the CI <a href="https://p3-battleships.herokuapp.com/">Battleships</a> project.
