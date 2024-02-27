@@ -99,7 +99,7 @@ class Player:
         Check win method where the game checks if someone wins the game after hitting all the ships
         """
         # Iterate through each ship
-        for ship, size in other_player.ships.items():
+        for ship in other_player.ships.items():
             # Check if all cells of the ship are marked as hit
             if all(
                 other_player.board[row][col] == "X"
