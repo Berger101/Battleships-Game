@@ -2,6 +2,8 @@
 
 Welcome to the Battleships Game – a classic naval combat experience brought to life in Python! Engage in thrilling battles against the computer and strategically position your fleet to dominate the high seas.
 
+<img src="assets/images/battleshipsgame.png">
+
 ## Game Features
 
 ### Dynamic Gameplay
