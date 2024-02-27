@@ -84,5 +84,14 @@ cd battleships-game
 
   <b>Open the Game</b>
   - Open the index.html file in your preferred web browser. You can do this by double-clicking the file or right-clicking and choosing "Open with" your browser.
+
   <b>Enjoy the Game</b>
   - You are now ready to enjoy the Monster Slaying Game on your local machine! Feel free to explore the game interface, battle monsters, and test different strategies.
+
+## Credits
+
+Content
+  - Some of the text for the README.md file were taken from <a href="https://chat.openai.com/">ChatGPT</a>
+
+Styling
+  - The styling for the game area was largely taken from the CI <a href="https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode">Love Sandwiches</a> project.
