@@ -27,7 +27,7 @@ Welcome to the Battleships Game – a classic naval combat experience brought to
 - A computer victory occurs when your fleet is entirely submerged beneath the waves.
 
 ### Colorful Interface
-- Enjoy a visually appealing game interface with color-coded text using the `colorama` library.
+- Enjoy a visually appealing game interface with color-coded text using the `colorama` library. 
 
 ## How to Play
 1. Clone the repository to your local machine.
@@ -40,6 +40,12 @@ Get ready for an immersive Battleships experience – command your fleet, outsma
 * Your code must be placed in the `run.py` file
 * Your dependencies must be placed in the `requirements.txt` file
 * Do not edit any of the other files or your code may not deploy properly
+
+## Testing
+- I tested that this page works in different browsers: Chrome, Firefox, Safari.
+- I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
+- I confirmed that you may choose where to target on the board and either a hit or miss occurs.
+- I confirmed that all error handling works, cannot target same coordinates twice, strings and numbers over 9 are invalid inputs.
 
 ## Creating the Heroku app
 
