@@ -118,11 +118,7 @@ The Battleships Game includes comprehensive error handling throughout the codeba
 - A computer victory occurs when your fleet is entirely submerged beneath the waves.
 
 ### Colorful Interface
-- Enjoy a visually appealing game interface with color-coded text using the `colorama` library. 
-
-## How to Play
-1. Clone the repository to your local machine.
-2. Run the game by executing the `run.py` script in your preferred Python environment.
+- Enjoy a visually appealing game interface with color-coded text using the `colorama` library.
 
 Get ready for an immersive Battleships experience – command your fleet, outsmart your opponent, and claim victory on the high seas!
 
@@ -156,7 +152,7 @@ If you have credentials, such as in the Love Sandwiches project, you must create
 Connect your GitHub repository and deploy as normal.
 
 ## Local Deployment
-Follow these steps to deploy the Monster Slaying Game on your local machine.
+Follow these steps to deploy the Battleships Game on your local machine.
 
 **Clone the Repository**
 - Open a terminal and run the following command to clone the project repository:
@@ -167,7 +163,7 @@ git clone https://github.com/your-username/battleships-game.git
 
 - Replace your-username with your GitHub username.
 
-**Install the Required Dependencies**
+**Install Python to your local machine**
 - Download and install Python on your computer from <a href="https://www.python.org/downloads/">Python website.</a>
 
 **Navigate to the Project Directory**
@@ -177,17 +173,17 @@ git clone https://github.com/your-username/battleships-game.git
 cd battleships-game
 ```
 
-**Activate the virtual environment in your terminal**
+**Install the Required Dependencies**
 
 ```console
 pip install -r requirements.txt
 ```
 
 **Open the Game**
-- Open the index.html file in your preferred web browser. You can do this by double-clicking the file or right-clicking and choosing "Open with" your browser.
+- Run the game by executing the `python run.py` script in your preferred Python environment.
 
 **Enjoy the Game**
-- You are now ready to enjoy the Monster Slaying Game on your local machine! Feel free to explore the game interface, battle monsters, and test different strategies.
+- You are now ready to enjoy the Battleships Game on your local machine! Feel free to explore the game interface, sink enemy ships, and test different strategies.
 
 ## Credits
 
