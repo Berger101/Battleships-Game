@@ -191,6 +191,7 @@ def play_game():
 # as a module into another script.
 if __name__ == "__main__":
     print("Welcome to Battleships game!")
+    print("Choose a number between 0-9")
     print(
         "You're mission is to destroy all enemy ships \
 on the battlefield, good luck!"
