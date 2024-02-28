@@ -8,46 +8,38 @@ Play the game here: <a href="https://python-battleships-game-4af4e24826a6.heroku
 
 ## User Stories
 
-**1. View Instructions:**
-
+**View Instructions:**
 - Access clear instructions on how to play the game.
 
-**2. Play the Game:**
-
+**Play the Game:**
 - Understand the rules and objectives.
 - Place my ships on the board strategically.
 - Take turns guessing the opponent's ship locations.
 
-**3. Receive Feedback:**
-
+**Receive Feedback:**
 - See a visual representation of the game board after each turn.
 - Receive clear feedback on hits and misses.
 - Be notified when the game ends.
 
-**4. Interact with the Interface:**
-
+**Interact with the Interface:**
 - Easily input my guesses during my turn.
 - View the computer's guesses during its turn.
 - See the current state of the game at any point.
 
-**5. Enjoy a Colorful Interface:**
-
+**Enjoy a Colorful Interface:**
 - See hits and misses highlighted in different colors.
 - Experience a visually appealing game interface.
 
-**6. Experience a Challenging AI:**
-
+**Experience a Challenging AI:**
 - Be challenged by a computer opponent with strategic moves.
 - Witness the computer's attempts to sink my ships.
 
-**7. Win or Lose the Game:**
-
+**Win or Lose the Game:**
 - Be informed when I have successfully sunk all computer ships.
 - Receive a notification when the computer sinks all of my ships.
 - Understand the outcome of the game clearly.
 
-**8. Restart the Game:**
-
+**Restart the Game:**
 - Easily restart the game to play again.
 
 ## Using Classes
