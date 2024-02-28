@@ -130,9 +130,22 @@ class Computer(Player):
         super().__init__("Computer")
 
     def take_turn(self, other_player):
-        guess_row = randint(0, 9)
-        guess_col = randint(0, 9)
-        return guess_row, guess_col
+        # Set to store previously guessed coordinates
+        guessed_coordinates = set()
+
+        while True:
+            try:
+                guess_row = randint(0, 9)
+                guess_col = randint(0, 9)
+
+                if (guess_row, guess_col) not in guessed_coordinates:
+                    guessed_coordinates.add((guess_row, guess_col))
+                    return guess_row, guess_col
+                else:
+                    # Coordinates have already been targeted, try again
+                    continue
+            except Exception as e:
+                print(f"Unexpected error during computer's turn: {e}")
 
 
 def play_game():
