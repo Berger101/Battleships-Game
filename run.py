@@ -107,7 +107,7 @@ class Player:
         sinking all the ships
         """
         # Iterate through each ship
-        for ship in other_player.ships.items():
+        for ship, size in other_player.ships.items():
             # Check if all cells of the ship are marked as hit
             if all(
                 other_player.board[row][col] == "X"
