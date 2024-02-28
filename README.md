@@ -63,6 +63,8 @@ The `Computer` class, inheriting from the `Player` class, represents the compute
 
 The game itself is orchestrated by the `play_game` function, coordinating the turns between the human player and the computer opponent. The use of classes facilitates a clean separation of responsibilities and promotes code reusability.
 
+<img src="assets/images/flowchart.png">
+
 Enjoy exploring the modular and object-oriented design of the Battleships Game, where classes enhance code organization and contribute to an enjoyable gaming experience!
 
 ## Code Features
