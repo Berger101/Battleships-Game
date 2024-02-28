@@ -4,7 +4,7 @@ Welcome to the Battleships Game – a classic naval combat experience brought to
 
 Play the game here: <a href="https://python-battleships-game-4af4e24826a6.herokuapp.com/">Battleships Game</a>
 
-<img src="assets/images/battleshipsgame.png">
+<img src="assets/images/battleshipsgame2.png">
 
 ## User Stories
 
