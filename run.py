@@ -70,7 +70,8 @@ class Player:
                 guess_row = int(input("Enter target row (0-9): "))
                 guess_col = int(input("Enter target column (0-9): "))
 
-                if guess_row not in range(0, 10) or guess_col not in range(0, 10):
+                if guess_row not in range(
+                        0, 10) or guess_col not in range(0, 10):
                     print("Please choose numbers between 0 and 9.")
                 elif (guess_row, guess_col) in guessed_coordinates:
                     print("Already targeted. Try again.")
@@ -168,10 +169,12 @@ def play_game():
             break
 
 
-# Checks whether the Python script is being run as the main program or if it is being imported as a module into another script.
+# Checks whether the Python script is being run as the main program
+# or if it is being imported as a module into another script.
 if __name__ == "__main__":
     print("Welcome to Battleships game!")
     print(
-        "You're mission is to destroy all enemy ships placed on the battlefield, good luck!"
+        "You're mission is to destroy all enemy ships \
+on the battlefield, good luck!"
     )
     play_game()
