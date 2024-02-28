@@ -95,6 +95,8 @@ The Battleships Game includes comprehensive error handling throughout the codeba
 - **Index Errors:** Ensuring that index values do not go out of bounds when accessing elements in lists.
 - **Logical Checks:** Verifying the logic of ship placement to avoid conflicts or errors.
 
+<img src="assets/images/errorhandling.png">
+
 ## Game Features
 
 #### Dynamic Gameplay
@@ -104,6 +106,8 @@ The Battleships Game includes comprehensive error handling throughout the codeba
 #### Fleet Deployment
 - Strategically place your fleet of five iconic ships: Carrier (5 cells), Battleship (4 cells), Cruiser (3 cells), Submarine (3 cells), and Destroyer (2 cells).
 - Randomized ship placement ensures a unique and challenging experience in each game.
+
+<img src="assets/images/fleetdeployment.png">
 
 #### Tactical Decision-Making
 - Take turns to target your opponent's fleet by entering coordinates on the game board.
