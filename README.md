@@ -2,6 +2,8 @@
 
 Welcome to the Battleships Game – a classic naval combat experience brought to life in Python! Engage in thrilling battles against the computer and strategically position your fleet to dominate the high seas.
 
+Play the game here: <a href="https://python-battleships-game-4af4e24826a6.herokuapp.com/">Battleships Game</a>
+
 <img src="assets/images/battleshipsgame.png">
 
 ## Using Classes
