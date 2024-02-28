@@ -114,27 +114,36 @@ Connect your GitHub repository and deploy as normal.
 ## Local Deployment
 Follow these steps to deploy the Monster Slaying Game on your local machine.
 
-  <b>Clone the Repository</b>
-  - Open a terminal and run the following command to clone the project repository:
+**Clone the Repository**
+- Open a terminal and run the following command to clone the project repository:
 
 ```console
 git clone https://github.com/your-username/battleships-game.git
 ```
 
-  - Replace your-username with your GitHub username.
+- Replace your-username with your GitHub username.
 
-  <b>Navigate to the Project Directory</b>
-  - Change into the project directory by running the following command in your terminal:
+**Install the Required Dependencies**
+- Download and install Python on your computer from <a href="https://www.python.org/downloads/">Python website.</a>
+
+**Navigate to the Project Directory**
+- Change into the project directory by running the following command in your terminal:
 
 ```console
 cd battleships-game
 ```
 
-  <b>Open the Game</b>
-  - Open the index.html file in your preferred web browser. You can do this by double-clicking the file or right-clicking and choosing "Open with" your browser.
+**Activate the virtual environment in your terminal**
 
-  <b>Enjoy the Game</b>
-  - You are now ready to enjoy the Monster Slaying Game on your local machine! Feel free to explore the game interface, battle monsters, and test different strategies.
+```console
+pip install -r requirements.txt
+```
+
+**Open the Game**
+- Open the index.html file in your preferred web browser. You can do this by double-clicking the file or right-clicking and choosing "Open with" your browser.
+
+**Enjoy the Game**
+- You are now ready to enjoy the Monster Slaying Game on your local machine! Feel free to explore the game interface, battle monsters, and test different strategies.
 
 ## Credits
 
