@@ -72,20 +72,24 @@ class Player:
 
                 if guess_row not in range(
                         0, 10) or guess_col not in range(0, 10):
-                    print("Please choose numbers between 0 and 9.")
+                    print(Fore.RED + "Please choose numbers between 0 and 9.")
+                    print(Style.RESET_ALL)
                 elif (guess_row, guess_col) in guessed_coordinates:
-                    print("Already targeted. Try again.")
+                    print(Fore.RED + "Already targeted. Try again.")
+                    print(Style.RESET_ALL)
                 elif other_player.board[guess_row][guess_col] in ["X", "M"]:
                     # Add guessed coordinates to the set
                     guessed_coordinates.add((guess_row, guess_col))
-                    print("Already targeted. Try again.")
+                    print(Fore.RED + "Already targeted. Try again.")
+                    print(Style.RESET_ALL)
                 else:
                     guessed_coordinates.add(
                         (guess_row, guess_col)
                     )  # Add guessed coordinates to the set
                     return guess_row, guess_col
             except ValueError:
-                print("Invalid input. Enter integers only.")
+                print(Fore.RED + "Invalid input. Enter integers only.")
+                print(Style.RESET_ALL)
 
     def mark_hit(self, row, col, other_player, source):
         """
