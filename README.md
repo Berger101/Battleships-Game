@@ -54,7 +54,7 @@ Play the game here: <a href="https://python-battleships-game-4af4e24826a6.heroku
 
 The Battleships Game is structured using Python classes, offering a modular and organized approach to code design. The use of classes provides clear separation of concerns and enhances the maintainability and readability of the codebase.
 
-### Player Class
+#### Player Class
 
 The `Player` class encapsulates all aspects of a player, including their board, fleet, ship placement logic, and turn-taking functionality. This abstraction allows for easy extension and customization of player-related features.
 
@@ -63,11 +63,11 @@ Key functionalities of the `Player` class include:
 - **Turn-Taking:** Handling player turns, input validation, and targeting the opponent's board.
 - **Feedback and Marking:** Providing real-time feedback on hits and misses, as well as marking the opponent's board.
 
-### Computer Class
+#### Computer Class
 
 The `Computer` class, inheriting from the `Player` class, represents the computer opponent in the game. It leverages the same ship placement and turn-taking logic as the human player, offering a consistent and challenging gaming experience.
 
-### Game Loop
+#### Game Loop
 
 The game itself is orchestrated by the `play_game` function, coordinating the turns between the human player and the computer opponent. The use of classes facilitates a clean separation of responsibilities and promotes code reusability.
 
@@ -75,11 +75,11 @@ Enjoy exploring the modular and object-oriented design of the Battleships Game, 
 
 ## Code Features
 
-### Input Validation and Error Handling
+#### Input Validation and Error Handling
 
 The Battleships Game incorporates robust input validation and error handling mechanisms to ensure a smooth and error-free gaming experience.
 
-#### Player Input Validation
+##### Player Input Validation
 
 The `take_turn` method in the `Player` class validates user inputs during the targeting phase. Key features include:
 
@@ -87,7 +87,7 @@ The `take_turn` method in the `Player` class validates user inputs during the ta
 - **Range Check:** Verifies that the entered values fall within the valid range of 0 to 9 for both rows and columns.
 - **Coordinate Uniqueness:** Prevents the player from targeting the same coordinates multiple times in a single game.
 
-#### General Error Handling
+##### General Error Handling
 
 The Battleships Game includes comprehensive error handling throughout the codebase. Examples include:
 
@@ -97,27 +97,27 @@ The Battleships Game includes comprehensive error handling throughout the codeba
 
 ## Game Features
 
-### Dynamic Gameplay
+#### Dynamic Gameplay
 - Experience the excitement of naval warfare with a dynamic turn-based gameplay.
 - Challenge the computer AI in intense one-on-one battles.
 
-### Fleet Deployment
+#### Fleet Deployment
 - Strategically place your fleet of five iconic ships: Carrier (5 cells), Battleship (4 cells), Cruiser (3 cells), Submarine (3 cells), and Destroyer (2 cells).
 - Randomized ship placement ensures a unique and challenging experience in each game.
 
-### Tactical Decision-Making
+#### Tactical Decision-Making
 - Take turns to target your opponent's fleet by entering coordinates on the game board.
 - Make wise choices to sink your opponent's ships and avoid their relentless attacks.
 
-### Real-Time Feedback
+#### Real-Time Feedback
 - Receive real-time feedback on hits and misses, accompanied by colorful emojis for a visually engaging experience.
 - See the state of the battlefield with a clear display of your and your opponent's boards.
 
-### Victory Conditions
+#### Victory Conditions
 - Win the game by strategically sinking all of your opponent's ships.
 - A computer victory occurs when your fleet is entirely submerged beneath the waves.
 
-### Colorful Interface
+#### Colorful Interface
 - Enjoy a visually appealing game interface with color-coded text using the `colorama` library.
 
 Get ready for an immersive Battleships experience – command your fleet, outsmart your opponent, and claim victory on the high seas!
@@ -187,8 +187,8 @@ pip install -r requirements.txt
 
 ## Credits
 
-Content
+**Content**
   - Some of the text for the README.md file were taken from <a href="https://chat.openai.com/">ChatGPT</a>
 
-Styling
+**Styling**
   - The styling for the game area was largely taken from the CI <a href="https://p3-battleships.herokuapp.com/">Battleships</a> project.
