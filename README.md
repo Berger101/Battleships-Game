@@ -6,6 +6,50 @@ Play the game here: <a href="https://python-battleships-game-4af4e24826a6.heroku
 
 <img src="assets/images/battleshipsgame.png">
 
+## User Stories
+
+**1. View Instructions:**
+
+- Access clear instructions on how to play the game.
+
+**2. Play the Game:**
+
+- Understand the rules and objectives.
+- Place my ships on the board strategically.
+- Take turns guessing the opponent's ship locations.
+
+**3. Receive Feedback:**
+
+- See a visual representation of the game board after each turn.
+- Receive clear feedback on hits and misses.
+- Be notified when the game ends.
+
+**4. Interact with the Interface:**
+
+- Easily input my guesses during my turn.
+- View the computer's guesses during its turn.
+- See the current state of the game at any point.
+
+**5. Enjoy a Colorful Interface:**
+
+- See hits and misses highlighted in different colors.
+- Experience a visually appealing game interface.
+
+**6. Experience a Challenging AI:**
+
+- Be challenged by a computer opponent with strategic moves.
+- Witness the computer's attempts to sink my ships.
+
+**7. Win or Lose the Game:**
+
+- Be informed when I have successfully sunk all computer ships.
+- Receive a notification when the computer sinks all of my ships.
+- Understand the outcome of the game clearly.
+
+**8. Restart the Game:**
+
+- Easily restart the game to play again.
+
 ## Using Classes
 
 The Battleships Game is structured using Python classes, offering a modular and organized approach to code design. The use of classes provides clear separation of concerns and enhances the maintainability and readability of the codebase.
@@ -85,6 +129,7 @@ Get ready for an immersive Battleships experience – command your fleet, outsma
 ## Reminders
 
 * Your code must be placed in the `run.py` file
+* You must install the required dependencies with "pip install -r requirements.txt"
 * Your dependencies must be placed in the `requirements.txt` file
 * Do not edit any of the other files or your code may not deploy properly
 
