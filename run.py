@@ -169,8 +169,9 @@ def play_game():
             break
 
 
-# Checks whether the Python script is being run as the main program
-# or if it is being imported as a module into another script.
+# Checks whether the Python script is being run
+# as the main program or if it is being imported
+# as a module into another script.
 if __name__ == "__main__":
     print("Welcome to Battleships game!")
     print(
