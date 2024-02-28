@@ -133,15 +133,14 @@ Get ready for an immersive Battleships experience – command your fleet, outsma
 * Your dependencies must be placed in the `requirements.txt` file
 * Do not edit any of the other files or your code may not deploy properly
 
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
 ## Testing
 - I tested that this page works in different browsers: Chrome, Firefox, Safari.
 - I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
 - I confirmed that you may choose where to target on the board and either a hit or miss occurs.
 - I confirmed that all error handling works, cannot target same coordinates twice, strings and numbers over 9 are invalid inputs.
+
+**Constraints**
+- The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
 ## Creating the Heroku app
 
